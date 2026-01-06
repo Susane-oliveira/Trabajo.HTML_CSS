@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emporium Sperandio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/presupuesto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+     <img class="logo" src="../images/logo.png" alt="logo" width="1024" height="1536">
+    <h1>Emporium Sperandio</h1>
+
+    <nav class="navbar">
+        <ul class="navbarList">
+            <li><a class="enlace" href="../index.html">inicio</a></li>
+            <li><a class="enlace" href="./productos.html">productos</a></li>
+            <li><a class="enlace active" href="#">presupuesto</a></li>
+            <li><a class="enlace" href="./contacto.html">contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- MAIN -->
+
+<div class="container">
+    <h2 class="form-title">Formulario de presupuesto</h2>
+    <form id="myform" name="myform" method="get">
+
+        <ul class="flex-outer">
+
+            <li>
+                <label for="first-name">Nombre</label>
+                <input type="text" id="first-name" name="first-name"
+                       placeholder="Escriba su nombre"
+                       pattern="[A-Za-z]{3,20}"
+                       title="Solo letras (3 a 20 caracteres)"
+                       required>
+            </li>
+
+            <li>
+                <label for="surname">Apellido</label>
+                <input type="text" id="surname" name="surname"
+                       placeholder="Escriba sus apellidos"
+                       pattern="[A-Za-z]{4,40}"
+                       title="Solo letras (4 a 40 caracteres)"
+                       required>
+            </li>
+
+            <li>
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email"
+                       placeholder="correo@ejemplo.com"
+                       pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"
+                       required>
+            </li>
+
+            <li>
+                <label for="telephone">Teléfono</label>
+                <input type="tel" id="telephone" name="telephone"
+                       placeholder="123456789"
+                       pattern="[0-9]{9}"
+                       title="Debe contener 9 números"
+                       required>
+            </li>
+
+            <li>
+                <label for="message">Solicite más información</label>
+                <textarea id="message" rows="6"
+                          placeholder="Explique brevemente su solicitud..."></textarea>
+            </li>
+
+            <li>
+                <input id="priv" name="priv" type="checkbox" required>
+                <label for="priv">
+                    Leí y acepto la
+                    <a href="#" target="_blank">Política de privacidad</a>
+                </label>
+            </li>
+
+            <li class="libuttons">
+                <button type="reset">Borrar</button>
+                <button type="submit">Enviar</button>
+            </li>
+
+        </ul>
+    </form>
+</div>
+
+<footer>
+       <div class="address">
+        <strong>Emporium Sperandio</strong><br>
+        Calle Medico Amenedo Casabella,06 — Arteixo, A Coruña, España<br>
+        Aviso legal y política de privacidad.
+      </div>
+        <div id="social_media_icons">
+                <a href="htts://twitter.com/" class="icon-link twitter" target="_blank">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="htts://facebook.com/" class="icon-link facebook" target="_blank">
+                     <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="htts:instagram.com/" class="icon-link instagram"  target="_blank">
+                      <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="htts:github.com/" class="icon-link github"  target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+</footer>
+
+</body>
+</html>
